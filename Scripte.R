@@ -245,27 +245,3 @@ ctx_llm_generate <- function(prompt,
   
   parsed$response
 }
-
-# EXEMPLES
-
-#library(contextR)
-data(iris)
-
-# ACP
-res_acp <- acp_context(
-  iris[, 1:4],
-  context = "Données morphologiques de fleurs d'iris."
-)
-print(res_acp)
-summary(res_acp)
-plot(res_acp)
-
-# ANOVA
-res_anova <- anova_context(
-  Sepal.Length ~ Species,
-  data = iris,
-  context = "Comparaison des longueurs de sépales entre espèces."
-)
-print(res_anova)
-summary(res_anova)
-tukey.context_anova(res_anova)
