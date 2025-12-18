@@ -1,6 +1,6 @@
 # Projet-Fonctions-et-M-thodes
 
-### contextR — Analyse statistique contextuelle avec LLM (Ollama)
+### Scripte.R — Analyse statistique contextuelle avec LLM (Ollama)
 
 
 ## DESCRIPTION
@@ -23,20 +23,22 @@
 
 
 ### INSTALLATION DU PACKAGE LOCAL
-# Le package contextR n’est pas distribué sur le CRAN.
+# Le package Scripte.R n’est pas distribué sur le CRAN.
 # Il doit être installé localement à partir de son dossier source.
 
 # Étapes :
 
-# 1) Se placer dans le dossier contenant le package contextR
+# 1) Se placer dans le dossier contenant le package Scripte.R
 
-# 2) Installer le package localement :
-# install.packages("chemin/vers/contextR", repos = NULL, type = "source")
-# ou, si le répertoire courant contient le package :
+# 2) Créer le package a partir de Scripte File-> New Project -> New Directory -> R package selectionner le fichier dans l'environement local
+
+# 3) Installer le package localement :
+# install.packages("chemin/vers/Scripte.R", repos = NULL, type = "source")
+# ou, si le répertoire courant contient le package(setwd()) :
 # install.packages(".", repos = NULL, type = "source")
 
-# 3) Charger le package :
-# library(contextR)
+# 4) Charger le package :
+# library(Scripte.R)
 
 
 ### PRÉREQUIS — LLM (OLLAMA)
@@ -58,7 +60,7 @@
 # Par défaut, le package utilise le modèle "llama3".
 
 # Dans un terminal :
-# ollama pull llama3
+# ollama pull llama3:8b
 
 # Vérifier les modèles installés :
 # ollama list
@@ -150,4 +152,5 @@ tukey.context_anova(res_anova)
 
 # - Le LLM est utilisé uniquement pour l’interprétation
 #   des résultats, jamais pour le calcul statistique.
+
 
