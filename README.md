@@ -1,6 +1,6 @@
 # Projet-Fonctions-et-M-thodes
 
-### Scripte.R — Analyse statistique contextuelle avec LLM (Ollama)
+### ContextR — Analyse statistique contextuelle avec LLM (Ollama)
 
 
 ## DESCRIPTION
@@ -23,22 +23,22 @@
 
 
 ### INSTALLATION DU PACKAGE LOCAL
-# Le package Scripte.R n’est pas distribué sur le CRAN.
+# Le package ContextR n’est pas distribué sur le CRAN.
 # Il doit être installé localement à partir de son dossier source.
 
 # Étapes :
 
-# 1) Se placer dans le dossier contenant le package Scripte.R
+# 1) Se placer dans le dossier contenant le package ContextR
 
-# 2) Créer le package a partir de Scripte File-> New Project -> New Directory -> R package selectionner le fichier dans l'environement local
+# 2) Créer le package a partir de ContextR File-> New Project -> New Directory -> R package selectionner le fichier dans l'environement local
 
 # 3) Installer le package localement :
-# install.packages("chemin/vers/Scripte.R", repos = NULL, type = "source")
+# install.packages("chemin/vers/ContextR", repos = NULL, type = "source")
 # ou, si le répertoire courant contient le package(setwd()) :
 # install.packages(".", repos = NULL, type = "source")
 
 # 4) Charger le package :
-# library(Scripte.R)
+# library(ContextR)
 
 
 ### PRÉREQUIS — LLM (OLLAMA)
